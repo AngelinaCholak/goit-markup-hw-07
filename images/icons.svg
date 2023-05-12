@@ -96,3 +96,13 @@
       <path fill="#f4f4fd" d="M20.594 5.673a1.222 1.222 0 0 1 1.705.013 1.235 1.235 0 0 1 .045 1.714l-6.526 8.206a1.211 1.211 0 0 1-1.358.305 1.22 1.22 0 0 1-.409-.272l-4.328-4.351a1.227 1.227 0 0 1-.39-.88 1.234 1.234 0 0 1 1.248-1.255 1.215 1.215 0 0 1 .876.393l3.425 3.442 5.681-7.277a.282.282 0 0 1 .033-.036h-.002z" style="fill:var(--color2, #f4f4fd)"/>
       <path fill="none" stroke="#404bbf" stroke-width="1.333" d="M8 .667h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-16a2 2 0 0 1 2-2z" style="stroke:var(--color1, #404bbf)"/>
     </symbol>
+
+
+
+ <symbol id="icon-charm_menu-hamburger" viewBox="0 0 47 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4.364" d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965"/>
+    </symbol>
+
+     <symbol id="icon-Vector-1" viewBox="0 0 47 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4.364" d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965"/>
+    </symbol>

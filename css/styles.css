@@ -53,20 +53,18 @@ background-color: var(--white-background);
     display: flex;
     align-items: center;
 }
-.container{
-   
+.container{  
     padding: 0 15px;
     margin: 0 auto;
-    width: 1158px;
-   
+    width: 1158px; 
 }
 
 ul {
-
     padding-left: 0%;
     margin: 0;
     margin-right: 0;
 }
+
  nav{
     display: flex;
     align-items: center;
@@ -74,8 +72,18 @@ ul {
 .menu-nav{
     display: flex;
     gap: 40px;
+}
+
+/*Кнопка меню*/
+
+.menu-button{
 
 }
+
+
+
+
+
 .link {
 text-decoration: none;
 }
