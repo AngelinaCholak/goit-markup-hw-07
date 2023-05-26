@@ -73,13 +73,34 @@ ul {
     display: flex;
     gap: 40px;
 }
+@media (max-width: 428px) {
+    .menu-nav {
+        display: none;
+    }
+}
 
 /*Кнопка меню*/
 
-.menu-button{
+.menu-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40px;
+        min-width: 40px;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        outline: none;
+   
 
 }
-
+@media (min-width: 428px) {
+    .menu-button {
+        display: none;
+    }
+}
 
 
 
