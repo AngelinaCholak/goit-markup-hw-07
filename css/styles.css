@@ -112,12 +112,23 @@ ul {
         display: none;
     }
 }
-.menu-button.is-open .icon-menu{
-display: none;
+.menu-button.is-open .icon-cross {
+        display: block;
+}
+.menu-button .icon-cross {
+        display: none;
+
 }
 
+.menu-button.is-open .icon-menu {
+    display: none;
+
+}
+
+
+
 .svg-menu {
-    stroke: #2E2F42;
+    stroke: var(--dark);
 
 }
 
