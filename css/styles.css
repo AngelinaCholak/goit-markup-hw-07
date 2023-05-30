@@ -97,13 +97,13 @@ ul {
         padding: 0;
         cursor: pointer;
         border: none;
-       
+        margin-right: 16px;
         outline: none;
         position: absolute;
         top: 0;
         right: 0;
-        margin: 0;
         background-color: #FFFFFF;
+        
    
 
 }
@@ -129,6 +129,8 @@ ul {
 
 .svg-menu {
     stroke: var(--dark);
+    margin-top: 24px;
+    margin-bottom: 24px;
 
 }
 
@@ -165,10 +167,25 @@ list-style: none;
 }
 
 .media-logo {
-margin-top: 24px;
 align-items: center;
 display: flex;
 }
+@media (min-width: 428px) {
+    .media-logo {
+        display: none;
+    }
+}
+.logo-media{
+    margin-top: 25.5px;
+    margin-bottom: 23.5px;
+    margin-left: 16px;
+}
+@media (min-width: 428px) {
+    .logo-media {
+        display: none;
+    }
+}
+
 .logo {
 font-family: "Raleway", sans-serif;
 font-weight: 800;
