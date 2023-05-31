@@ -226,17 +226,19 @@ ul {
 }
 .mobil-tel {
         display: block;
-            margin-bottom: 40px;
-            color: var(--primary-brand);
-            font-weight: 700;
-
-            line-height: 1.1;
-            letter-spacing: 0.02em;
+        margin-bottom: 40px;
+        color: var(--primary-brand);
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        font-weight: 700;
+        font-size: 34px;
+        
 
 }
 @media (min-width: 428px) {
     .mobil-tel {
-        font-weight: 700;
+     
     }
 }
 .mobil-email {
