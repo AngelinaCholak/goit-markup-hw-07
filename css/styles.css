@@ -59,6 +59,8 @@ background-color: var(--white-background);
     display: flex;
     align-items: center;
 }
+
+
 .container{  
     padding: 0 15px;
     margin: 0 auto;
@@ -130,6 +132,9 @@ ul {
 
 .icon-cross{
 
+}
+.icon-menu {
+    max-width: 428px;
 }
 
 
@@ -249,9 +254,9 @@ list-style: none;
 }
 
 .media-logo {
-align-items: center;
-display: flex;
-min-width: 320px;
+    align-items: center;
+    display: flex;
+    min-width: 320px;
     max-width: 428px;
     margin-left: auto;
     margin-right: auto;
@@ -360,11 +365,7 @@ span {
     
  
 }
-@media (max-width: 428px) {
-    .main {
-        display: none;
-    }
-}
+
 
 /* Section 1 */
 
@@ -377,10 +378,10 @@ span {
     background-color: var(--hero-background);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people/people.jpg);
    
-    
 }
 
-.text {
+
+    .text {
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -432,8 +433,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #f4f4fd;
     border-radius: 4px;
     margin-bottom: 8px;
-    
-
 }
 
 .studio{
