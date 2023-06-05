@@ -64,6 +64,13 @@ background-color: var(--white-background);
 .link {
     text-decoration: none;
 }
+.list {
+        margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 0;
+            
+            list-style: none;
+}
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -76,12 +83,15 @@ background-color: var(--white-background);
     margin-bottom: 22px;
     margin-left: 16px;
     display: flex;
-        align-items: center;
-        justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
+
 span {
     color: var(--modal-overlay);
 }
+
+
 .menu-nav {
     display: none;
     
@@ -94,7 +104,63 @@ span {
     justify-content: space-between;
     display: flex;
     align-items: center;
+    
 }
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    min-width: 40px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    margin-right: 16px;
+    outline: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    line-height: 0;
+    
+}
+
+.button-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    position: absolute;
+    margin-left: auto;
+    top: 24px;
+    right: 24px;
+    border-radius: 50%;
+    background: var(--white-background);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    cursor: pointer;
+    transition-property: background-color;
+    transition: background-color var(--presse-state);
+    color: var(--color);
+    color: var(--hero-background);
+    transition-property: visibility, opacity;
+    transition-duration: var(--anim-fast);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.svg-menu {
+    stroke: var(--dark);
+    margin-top: 24px;
+  
+}
+
+
+
+/*мобільне меню*/
+
+
+
 .container-menu {
     position: fixed;
     top: 0;
@@ -118,24 +184,7 @@ span {
 
 
 }
-.menu-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 40px;
-    min-width: 40px;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    border: none;
-    margin-right: 16px;
-    outline: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: transparent;
-    
-}
+
 .container-menu.is-open {
     transform: translateX(0);
     opacity: 1;
@@ -143,34 +192,60 @@ span {
     pointer-events: auto;
 
 }
-.button-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    position: absolute;
-    margin-left: auto;
-    top: 24px;
-    right: 24px;
-    border-radius: 50%;
-    background: var(--white-background);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    cursor: pointer;
-    transition-property: background-color, ;
-    transition: background-color var(--presse-state);
-    color: var(--color);
-    color: var(--hero-background);
-    transition-property: visibility, opacity;
-    transition-duration: var(--anim-fast);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.mobil-menu {
+    padding: 0;
+    margin-bottom: auto;
 }
-.svg-menu {
-    stroke: var(--dark);
-    margin-top: 24px;
-  
+
+.mobil-menu-list {
+    display: block;
+    margin-bottom: 40px;
+    color: var(--hero-background);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    margin-left: 40px;
+
+}
+
+.mobil-menu-list:hover {
+    color: var(--presse-state);
+
+}
+
+.mobil-menu-list:focus {
+    color: var(--presse-state);
+}
+
+.mobile-contacts{
+        margin-bottom: 48px;
+        margin-left: 40px;
+}
+
+.mobil-tel {
+       color: var(--primary-brand);
+        display: flex;
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
 
 
+
+}
+.mobil-email {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 124px;
+    color: var(--text);
+    font-size: 20px;
+    line-height: 24px;
+}
+.ellipse-media-mobil {
+    display: flex;
+    gap: 56px;
 }
 
 
@@ -375,14 +450,7 @@ ul {
      display: none;
     }
 }
-.mobil-email {
-    display: block;
-    margin-top: 40px;
-    margin-bottom: 124px;
-    color: var(--text);
-    font-size: 20px;
-    line-height: 24px;
-}
+
 
 .ellipse-media-mobil {
     display: flex;
@@ -410,9 +478,10 @@ transition: color var(--anim-fast);
 .test-link:hover { 
     color: var(--presse-state);
 }
-.list {
-list-style: none;
-}
+
+
+
+
 
 
 .logo {
