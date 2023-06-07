@@ -178,6 +178,14 @@ nav {
     bottom: -1px;
 }
 
+.test-link {
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text);
+    transition: color var(--anim-fast);
+}
+
 .test-link:focus {
     color: var(--presse-state);
 }
@@ -195,6 +203,11 @@ nav {
 
 @media screen and (min-width: 768px) {
 
+    .container-nav {
+    
+            margin-left: auto;
+            margin-right: auto;
+        }
     .menu-nav {
         display: flex;
     }
@@ -206,6 +219,7 @@ nav {
         display: flex;
         flex-direction: column;
         row-gap: 12px;
+        margin-right: 0px;
         
     }
         .test-link {
@@ -219,26 +233,39 @@ nav {
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             
         }
+                .test-link {
+                    font-style: normal;
+                    line-height: 1.5;
+                    letter-spacing: 0.02em;
+                    color: var(--text);
+                    transition: color var(--anim-fast);
+                }
 }
 
 @media screen and (min-width: 1158px) {
     .container-nav {
         margin-right: auto;
         }
+
     .menu-nav {
         display: flex;
        }
+
     .address {
         display: flex;
         }
+
     .address-link {
         display: flex;
         flex-direction: row;
         gap: 40px;
+        margin-right: 141px;
         }
+
     .logo {
         margin-left: 125px;
         }
+
         .test-link {
             line-height: 1.5;
             letter-spacing: 0.02em;
@@ -437,63 +464,20 @@ nav {
    
 }
 
-
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    .section {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people/people2x.jpg);
-    }
-}
-.container {
-    
-        display: block;
-        width: auto;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-left: auto;
-        margin-right: auto;
-
-}
-@media screen and (min-width: 480px) {
-    .container {
-        width: 428px;
-        
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
-}
-
-@media screen and (min-width: 1158px) {
-    .container {
-        width: 1158px;
-    }
-        .menu-button {
-            display: none;
-            
-    
-        }
-}
-
-
 .text {
-        display: block;
-        max-width: 320px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 72px;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: var(--color);
-    
-   
+    display: block;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color);
+
+
 }
 
 .button {
@@ -525,6 +509,53 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     background-color: var(--presse-state);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 768px),
+screen and (min-resolution: 192dpi) and (max-width: 768px),
+screen and (min-resolution: 2dppx) and (max-width: 768px) {
+    .section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people/people2x.jpg);
+    }
+}
+
+.container {
+    
+        display: block;
+        width: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+
+}
+@media screen and (min-width: 428px) {
+    .container {
+        width: 428px;
+        
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        min-width: 768px;
+    }
+    .text {
+        max-width: 496px;
+        margin-bottom: 36px;
+        font-size: 56px;
+        line-height: 1.07;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+    }
+    .menu-button {
+        display: none;
+    }
+}
+
 
 /* benefits-section */
 
@@ -565,6 +596,10 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.element-two {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
 .strategy {
     position: absolute;
     display: flex;
@@ -586,6 +621,20 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     width: auto;
     height: 624px;
     top: 598px;
+}
+
+@media only screen and (min-width: 768px) {
+    .list-two {
+        display: flex;
+        flex-direction: row;
+        column-gap: 24px;
+    }
+
+        .element-two {
+            width: calc((100% - 16px) / 2);
+        }
+
+    
 }
 
 
@@ -611,6 +660,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     
         }
 }
+
+
 
 .title {
     font-family: 'Roboto';
