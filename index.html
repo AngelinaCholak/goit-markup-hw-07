@@ -20,7 +20,7 @@
     rel="stylesheet">
 
     <header class="header">
-        <div class="div container-nav ">   
+        <div class="div container container-nav ">   
             <nav class="nav">
                 <a class="logo link" href="./index.html"> Web<span>Studio</span></a>
                     <ul class="list link menu-nav">
@@ -36,13 +36,14 @@
                         </li>
                     </ul> 
             </nav>
-            <address class="address">
+            <address class="address container-address">
                     <ul class="list address-link">
                         <li>
-                            <a href="mailto:info@devstudio.com" class="test-link link">info@devstudio.com</a>
+                            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
                         </li>
                         <li>
-                            <a href="tel:+110001111111" class="test-link link">+11 (000) 111-11-11</a>
+                        </li>
+                            <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
                         </li>
                     </ul>
             </address>
@@ -202,14 +203,16 @@
                 <h2 class="portfolio">Our Team</h2>
                 <ul class="list list-four">
                      <li class="team">
-                     <img 
-                     srcset="./images/markguerrero.jpg 264w,./images/markguerrero2x.jpg 528W"
-                     sizes="(min-widht: 428px) 264px, 100vw"
-                     src="./images/markguerrero.jpg"
-                     alt="markguerrero"
-                     width="264"
-                     height="260"
-                     loading="lazy">
+                    <img srcset="
+                        ./images/markguerrero.jpg 264w,
+                        ./images/markguerrero2x.jpg 528W" 
+                        sizes="(min-width: 428px) 264px, 100vw"
+                        src="./images/markguerrero.jpg" 
+                        alt="markguerrero" 
+                        width="264" 
+                        height="260"
+                        loading="lazy" />
+
                 <div class="employee">
                      <h3 class="title-employee">Mark Guerrero</h3>
                      <p class="paragraph-contacts">Product Designer</p>
@@ -246,14 +249,12 @@
                 </div>
                      </li>
                      <li class="team">
-                     <img 
-                      srcset="./images/tomford.jpg 264w, ./images/tom-ford2x.jpg 528W"
-                      sizes="(min-widht: 428px) 264px, 100vw"
-                      src="./images/tomford.jpg"
-                      alt="tomford"
-                      width="264"
-                      height="260"
-                      loading="lazy">
+
+                    <img 
+                    srcset="./images/tomford.jpg, ./images/tom-ford@2x.jpg"
+                    sizes="(min-widht: 428px) 264px, 100vw"
+                    src=“./images/tomford.jpg” 
+                     alt="tomford"/>
 
                 <div class="employee">
                      <h3 class="title-employee">Tom Ford</h3>
@@ -484,19 +485,23 @@
                <div class="subscribe-div-footer">
                 <p class="subscribe">Subscribe</p>
                     <form class="form-footer">
-                        <label class="newsletter-form-field" for="email"></label>
-                        <input 
-                        id="email"
-                        class="input-subscribe" 
-                        type="email" 
-                        name="email"
-                        placeholder="E-mail">
-                    
-                    <button class="button-subscribe newsletter-btn" type="submit">Subscribe
-                    <svg width="24" height="24">
-                        <use href="./images/icons.svg#icon-Frame-3"></use>
-                    </svg>
-                    </button>
+                        
+                        <div class="div-input-subscribe">
+                            <label class="newsletter-form-field" for="email"></label>
+                            <input 
+                            id="email"
+                            class="input-subscribe" 
+                            type="email" 
+                            name="email"
+                            placeholder="E-mail">
+                    </div>
+                    <div class="div-button-subscribe">
+                        <button class="button-subscribe newsletter-btn" type="submit">Subscribe
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-Frame-3"></use>
+                        </svg>
+                        </button>
+                    </div>
                     </form>
                 </div>
              
