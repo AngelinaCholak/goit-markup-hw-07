@@ -25,7 +25,6 @@
                 <a class="logo link" href="./index.html"> Web<span>Studio</span></a>
                     <ul class="list link menu-nav">
                         <li>
-                            
                             <a class=" nav-link link current " href="./index.html">Studio</a>
                         </li>
                         <li>
@@ -42,7 +41,6 @@
                             <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
                         </li>
                         <li>
-                        </li>
                             <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
                         </li>
                     </ul>
@@ -185,13 +183,25 @@
                 <h2 class="portfolio">What are we doing</h2>
                 <ul class="list list-three">
                     <li class="element-three">
-                        <img src="./images/img1.jpg" alt="img1" width="360">
+                        <img 
+                        srcset="./images/img1.jpg 1x,./images/img1-2x.jpg 2x" 
+                        src="./images/img1.jpg" 
+                        alt="img1" 
+                        >
                     </li>
                     <li class="element-three">
-                        <img src="./images/img2.jpg" alt="img2" width="360">
+                        <img 
+                        srcset="./images/img2.jpg 1x,./images/img2-2x.jpg 2x" 
+                        src="./images/img2.jpg" 
+                        alt="img2" 
+                        >
                     </li>
                     <li class="element-three">
-                        <img src="./images/img3.jpg" alt="img3" width="360">
+                        <img 
+                        srcset="./images/img3.jpg 1x,./images/img3-2x.jpg 2x" 
+                        src="./images/img3.jpg" 
+                        alt="img3" 
+                        >
                     </li>
                 </ul>
                 </div>
@@ -203,15 +213,11 @@
                 <h2 class="portfolio">Our Team</h2>
                 <ul class="list list-four">
                      <li class="team">
-                    <img srcset="
-                        ./images/markguerrero.jpg 264w,
-                        ./images/markguerrero2x.jpg 528W" 
-                        sizes="(min-width: 428px) 264px, 100vw"
+                    <img 
+                        srcset="./images/markguerrero.jpg 1x,./images/markguerrero2x.jpg 2x" 
                         src="./images/markguerrero.jpg" 
                         alt="markguerrero" 
-                        width="264" 
-                        height="260"
-                        loading="lazy" />
+                        >
 
                 <div class="employee">
                      <h3 class="title-employee">Mark Guerrero</h3>
@@ -248,13 +254,13 @@
                     </ul>
                 </div>
                      </li>
-                     <li class="team">
 
+                     <li class="team">
                     <img 
-                    srcset="./images/tomford.jpg, ./images/tom-ford@2x.jpg"
-                    sizes="(min-widht: 428px) 264px, 100vw"
-                    src=“./images/tomford.jpg” 
-                     alt="tomford"/>
+                        srcset="./images/tomford.jpg 1x,./images/tom-ford2x.jpg 2x"
+                        src=“./images/tomford.jpg” 
+                        alt="tomford"
+                        >
 
                 <div class="employee">
                      <h3 class="title-employee">Tom Ford</h3>
@@ -294,14 +300,13 @@
                      </li>
                 
                      <li class="team">
-                     <img 
-                      srcset="./images/camilagarcia.jpg 264w, ./images/camilagarcia2x.jpg 528W"
-                      sizes="(min-widht: 428px) 264px, 100vw"
-                      src="./images/camilagarcia.jpg"
-                      alt="camilagarcia"
-                      width="264"
-                      height="260"
-                      loading="lazy">
+
+                        <img 
+                            srcset="./images/camilagarcia.jpg 1x,./images/camilagarcia2x.jpg 2x" 
+                            src="./images/camilagarcia.jpg"
+                            alt="camilagarcia"
+                            >
+
                 <div class="employee">
                      <h3 class="title-employee">Camila Garcia</h3>
                      <p class="paragraph-contacts">Marketing</p>
@@ -341,13 +346,10 @@
 
                      <li class="team">
                      <img 
-                      srcset="./images/danielwilson.jpg 264w, ./images/danielwilson2x.jpg 528W"
-                      sizes="(min-widht: 428px) 264px, 100vw"
+                      srcset="./images/danielwilson.jpg 1x, ./images/danielwilson2x.jpg 2x"
                       src="./images/danielwilson.jpg"
                       alt="danielwilson"
-                      width="264"
-                      height="260"
-                      loading="lazy">
+                      >
 
                 <div class="employee">
                      <h3 class="title-employee">Daniel Wilson</h3>
@@ -485,7 +487,7 @@
                <div class="subscribe-div-footer">
                 <p class="subscribe">Subscribe</p>
                     <form class="form-footer">
-                        
+
                         <div class="div-input-subscribe">
                             <label class="newsletter-form-field" for="email"></label>
                             <input 
