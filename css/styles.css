@@ -193,9 +193,7 @@ nav {
     color: var(--presse-state);
 }
 
-.current {
-    color: var(--presse-state);
-}
+
 
 .current::after {
     content: " ";
@@ -437,6 +435,9 @@ nav {
     letter-spacing: 0.02em;
     margin-left: 40px;
 
+}
+.current {
+    color: var(--presse-state);
 }
 
 .mobil-menu-list:hover {
