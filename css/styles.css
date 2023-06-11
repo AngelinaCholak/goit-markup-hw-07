@@ -474,8 +474,15 @@ nav {
 }
 .ellipse-media-mobil {
     display: flex;
-    gap: 56px;
+    gap: 25px;
     padding-left: 40px;
+}
+@media screen and (min-width: 428px) {
+.ellipse-media-mobil {
+            
+    gap: 56px;
+ }
+
 }
 .ellipse-list {
     width: 40px;
@@ -506,7 +513,8 @@ nav {
 
 .section {
     
-        max-width: 1440px;
+        max-width: 1158px;
+        height: 432px;
         margin-left: auto;
         margin-right: auto;
         padding-top: 112px;
@@ -600,12 +608,8 @@ screen and (min-resolution: 2dppx) and (max-width: 768px) {
 /* benefits-section */
 
 .studio {
-    display: flex;
-    justify-content: space-between;
     padding-top: 96px;
     padding-bottom: 96px;
-    margin-left: auto;
-    margin-right: auto;
 }
  @media screen and (min-width: 1158px) {
      .studio {
@@ -763,7 +767,7 @@ screen and (min-resolution: 2dppx) and (max-width: 768px) {
 
 .contacts {
     background-color: var(--light);
-    padding: 120px 0;
+    padding: 96px 0;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -869,19 +873,16 @@ screen and (min-resolution: 2dppx) and (max-width: 768px) {
 
 .title-employee {
 
-
-    /* Header 3 */
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    /* identical to box height, or 120% */
-
     text-align: center;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
+
 @media screen and (min-width: 1158px) {
     .title-employee {
             font-family: 'Roboto';
@@ -909,7 +910,6 @@ screen and (min-resolution: 2dppx) and (max-width: 768px) {
     flex-direction: row;
     align-items: center;
     width: auto;
-    gap: 24px;
         
         }
 
@@ -933,11 +933,17 @@ screen and (min-resolution: 2dppx) and (max-width: 768px) {
 
 .container-list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 16px;
+    gap:72px 16px;
+    
    
+
+}
+@media only screen and (min-width: 768px) {
+    .container-list {
+       justify-content: center;
+       gap: 72px 24px;
+    }
 
 }
 
@@ -955,6 +961,11 @@ screen and (min-resolution: 2dppx) and (max-width: 768px) {
     .newsletter-form-field {
         width: 264px;
     }
+    .element-customers {
+    
+        width: 168px;
+    
+        }
 
 }
 
@@ -1109,7 +1120,6 @@ footer {
     height: 40px;
     color: var(--color);
     background: var(--primary-brand);
-    margin-left: 24px;
     border-radius: 4px;
     cursor: pointer;
     border-color: transparent;
@@ -2329,15 +2339,20 @@ overflow: hidden;
 
 .modal{
     position: absolute;
-    top: calc(50% - 288px);
-    left: calc(50% - 204px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 408px;
-    min-height: 584px;
     background: var(--modal-background);
     box-shadow: 0px 1px 1px rgb(0 0 0 / 14%), 0px 1px 3px rgb(0 0 0 / 12%), 0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 4px;
     padding: 24px;
     padding-top: 72px;
+    width: 95%;
+    max-width: 392px;
+    height: 95%;
+    max-height: 584px;
+    overflow: scroll;
     
 
 }
